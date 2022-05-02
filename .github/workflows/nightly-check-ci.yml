@@ -3,9 +3,9 @@ name: Nightly Check CI
 on:
   # https://docs.github.com/en/actions/reference/events-that-trigger-workflows#schedule
   # Note: this will set GITHUB_SHA to the latest commit on the default branch.
-  schedule:
+  #schedule:
     # 2AM EST == 6AM UTC
-    - cron:  '0 6 * * *'
+  #  - cron:  '0 6 * * *'
   push:
     branches: [ 'nightly/**', 'release/v*' ]
 

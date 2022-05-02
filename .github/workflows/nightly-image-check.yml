@@ -1,9 +1,9 @@
 name: Nightly Image Compare CI
 
 on:
-  schedule:
+  #schedule:
     # 10AM EST == 14 UTC
-    - cron:  '0 14 * * *'
+    #- cron:  '0 14 * * *'
 
 jobs:
   compare:
