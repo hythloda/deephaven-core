@@ -48,7 +48,7 @@ jobs:
 
       - name: Docker meta server
         id: docker_meta_server
-        uses: docker/metadata-action@v3
+        uses: docker/metadata-action@v4
         with:
           images: |
             ghcr.io/${{ github.repository_owner }}/server
@@ -62,7 +62,7 @@ jobs:
 
       - name: Docker meta server nltk
         id: docker_meta_server_nltk
-        uses: docker/metadata-action@v3
+        uses: docker/metadata-action@v4
         with:
           images: |
             ghcr.io/${{ github.repository_owner }}/server-nltk
@@ -76,7 +76,7 @@ jobs:
 
       - name: Docker meta server pytorch
         id: docker_meta_server_pytorch
-        uses: docker/metadata-action@v3
+        uses: docker/metadata-action@v4
         with:
           images: |
             ghcr.io/${{ github.repository_owner }}/server-pytorch
@@ -90,7 +90,7 @@ jobs:
 
       - name: Docker meta server sklearn
         id: docker_meta_server_sklearn
-        uses: docker/metadata-action@v3
+        uses: docker/metadata-action@v4
         with:
           images: |
             ghcr.io/${{ github.repository_owner }}/server-sklearn
@@ -104,7 +104,7 @@ jobs:
 
       - name: Docker meta server tensorflow
         id: docker_meta_server_tensorflow
-        uses: docker/metadata-action@v3
+        uses: docker/metadata-action@v4
         with:
           images: |
             ghcr.io/${{ github.repository_owner }}/server-tensorflow
@@ -118,7 +118,7 @@ jobs:
 
       - name: Docker meta server slim
         id: docker_meta_server_slim
-        uses: docker/metadata-action@v3
+        uses: docker/metadata-action@v4
         with:
           images: |
             ghcr.io/${{ github.repository_owner }}/server-slim
@@ -282,7 +282,7 @@ jobs:
 
       - name: Docker meta
         id: docker_meta
-        uses: docker/metadata-action@v3
+        uses: docker/metadata-action@v4
         with:
           images: ghcr.io/${{ github.repository_owner }}/grpc-proxy
           flavor: |
@@ -369,7 +369,7 @@ jobs:
 
       - name: Docker meta
         id: docker_meta
-        uses: docker/metadata-action@v3
+        uses: docker/metadata-action@v4
         with:
           images: ghcr.io/${{ github.repository_owner }}/envoy
           flavor: |
@@ -432,7 +432,7 @@ jobs:
 
       - name: Docker meta
         id: docker_meta
-        uses: docker/metadata-action@v3
+        uses: docker/metadata-action@v4
         with:
           images: ghcr.io/${{ github.repository_owner }}/web
           flavor: |
@@ -528,7 +528,7 @@ jobs:
 
       - name: Docker meta
         id: docker_meta
-        uses: docker/metadata-action@v3
+        uses: docker/metadata-action@v4
         with:
           images: ghcr.io/${{ github.repository_owner }}/web-plugin-packager
           flavor: |
