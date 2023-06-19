@@ -82,7 +82,7 @@ jobs:
     runs-on: [benchmark]
     steps:
       - name: Setup python environment
-        uses: "actions/setup-python@v2"
+        uses: "actions/setup-python@v4"
         with:
           python-version: "3.9"
       
